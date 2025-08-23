@@ -1,6 +1,6 @@
 MCQ,Choices,Correct
-What is Generative AI a subfield of?,a: Machine learning | b: Artificial intelligence | c: Data science | d: Computer vision,b
-What technological advancement enabled the AI boom in the 2020s?,a: Markov chains | b: Transformer-based deep neural networks | c: Symbolic AI methods | d: State space search,b
-Which of these is an ethical concern associated with Generative AI?,a: Creating renewable energy | b: Enhancing job opportunities | c: Deepfakes and fake news | d: Improving data privacy,c
-What is considered the first example of algorithmically generated media?,a: AARON's paintings | b: Markov chain | c: Deep neural networks | d: Text-to-image models,b
-When did generative neural networks become prominent?,a: 1980s | b: 1990s | c: 2014–2019 | d: 2020s,c
+What is the main purpose of generative artificial intelligence?,"a: To analyze data patterns for predictions | b: To generate new data like text, images, or videos | c: To replace all human jobs automatically | d: To develop hardware for computers",b
+Which technology enabled the AI boom in the 2020s that improved generative AI tools?,a: Markov chains | b: Symbolic AI methods | c: Transformer-based deep neural networks | d: Quantum computing,c
+What ethical concern is NOT associated with generative AI?,a: Creation of deepfakes | b: Violation of intellectual property laws | c: Mass replacement of human jobs | d: Improved healthcare diagnostics,d
+What was the first example of algorithmically generated media mentioned in the text?,a: AARON's paintings | b: ChatGPT | c: Markov chain-based text | d: Eugeny Onegin novel,c
+What type of methods did generative AI planning systems use in the 1980s-1990s?,a: Neural networks | b: Quantum algorithms | c: Symbolic AI methods like state space search | d: Deep learning,c
