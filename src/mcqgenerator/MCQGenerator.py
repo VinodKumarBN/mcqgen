@@ -6,7 +6,7 @@ from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain  
-import PyPDF3 
+import PyPDF3
 from langchain.schema.runnable import RunnableSequence
 import json
 
@@ -66,7 +66,10 @@ review_chain = LLMChain(
     verbose=True
 )
 
-from langchain.schema.runnable import RunnableSequence   
-generate_evaluate_chain = quiz_chain | review_chain
+'''from langchain.schema.runnable import RunnableSequence   
+generate_evaluate_chain = quiz_chain | review_chain '''
+
+generate_evaluate_chain=SequentialChain(chains=[quiz_chain, review_chain], input_variables=["text", "number", "subject", "tone", "response_json"],
+                                        output_variables=["quiz", "review"], verbose=True,)
 
 

@@ -10,7 +10,7 @@ def read_file(file):
             pdf_reader=PyPDF3.PdfFileReader(file)
             text=""
             for page in pdf_reader.pages:
-                text+=page.extract_text()
+                text+=page.extractText()
             return text
             
         except Exception as e:
@@ -28,6 +28,7 @@ def get_table_data(quiz_str):
     try:
         # convert the quiz from a str to dict
         quiz_dict=json.loads(quiz_str)
+
         quiz_table_data=[]
         
         # iterate over the quiz dictionary and extract the required information
