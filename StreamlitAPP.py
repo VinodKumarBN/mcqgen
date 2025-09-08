@@ -9,20 +9,18 @@ import PyPDF3
 from langchain.schema.runnable import RunnableSequence
 from dotenv import load_dotenv
 
+import streamlit as st
+KEY = st.secrets["openai_api_key"]
+
 from src.mcqgenerator.utils import read_file, get_table_data
 from src.mcqgenerator.logger import logging
 from src.mcqgenerator.MCQGenerator import quiz_chain, quiz_evaluation_prompt
 from src.mcqgenerator.MCQGenerator import generate_evaluate_chain
 
-import streamlit as st
-
-api_key = st.secrets["OPENAI_API_KEY"]
-
 
 file_json=r"C:\Users\Hp\mcqgen\Response.json"
 with open(file_json, "r", encoding="utf-8") as file:
     RESPONSE_JSON = file.read()
-
 
 
 import streamlit as st
