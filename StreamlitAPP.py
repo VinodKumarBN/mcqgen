@@ -18,9 +18,12 @@ from src.mcqgenerator.MCQGenerator import quiz_chain, quiz_evaluation_prompt
 from src.mcqgenerator.MCQGenerator import generate_evaluate_chain
 
 
-file_json=r"C:\Users\Hp\mcqgen\Response.json"
+from pathlib import Path
+
+file_json = Path(__file__).parent / "Response.json"
 with open(file_json, "r", encoding="utf-8") as file:
     RESPONSE_JSON = file.read()
+
 
 
 import streamlit as st
