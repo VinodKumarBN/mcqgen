@@ -11,9 +11,11 @@ from langchain.schema.runnable import RunnableSequence
 import json
 
 
-from dotenv import load_dotenv
+'''from dotenv import load_dotenv
 load_dotenv()
-KEY=os.getenv("api_key")
+KEY=os.getenv("api_key")'''
+import streamlit as st
+KEY = st.secrets["openai_api_key"]
 
 llm=ChatOpenAI(
                model="deepseek/deepseek-r1:free",   
