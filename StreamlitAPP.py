@@ -3,7 +3,7 @@ import json
 import pandas as pd
 import traceback
 from langchain_openai import ChatOpenAI
-from langchain.prompts import PromptTemplate
+langchain_core.prompts import PromptTemplate
 from langchain.chains import LLMChain
 import PyPDF3 
 from langchain.schema.runnable import RunnableSequence
