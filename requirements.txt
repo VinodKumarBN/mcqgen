@@ -1,7 +1,7 @@
 openai
-langchain
 streamlit
 python-dotenv
-pyPDF3
-langchain_community
-langchain-openai
+PyPDF3
+langchain-community
+langchain==0.1.16
+langchain-openai==0.1.3
